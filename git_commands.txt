@@ -65,7 +65,7 @@ Undoes the most recent commit while keeping all modified files safely preserved 
 git commit -m "Add project README"
 Re-commits the staged README.md file cleanly into the repository history.
 
-git remote add origin https://github.com/Varshitha1895/git-assignment.git
+git remote add origin https://github.com/Varshitha1895/bits-assignment.git
 Connects the local Git repository to the remote repository hosted on GitHub.
 
 git remote -v
