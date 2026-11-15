@@ -1,0 +1,87 @@
+================================================================================
+GIT COMMANDS REFERENCE GUIDE - GitAssignment
+================================================================================
+
+git init -b main
+Initializes a new Git repository with 'main' set as the default initial branch.
+
+git status
+Displays the state of the working directory and staging area, showing untracked, modified, or staged files.
+
+git add .
+Stages all modified and new files in the current working directory for the next commit.
+
+git commit -m "Initial project setup"
+Creates the initial snapshot of the repository containing the baseline index.html and about.html files.
+
+git add index.html
+Stages the modified index.html file specifically to prepare it for committing.
+
+git commit -m "Updated index page"
+Records the changes made to index.html with an explanatory commit message.
+
+git branch feature
+Creates an independent branch named 'feature' branching off from the current commit.
+
+git checkout feature
+Switches the active working branch from 'main' to the newly created 'feature' branch.
+
+git branch
+Lists all local branches in the repository and highlights the currently active branch with an asterisk.
+
+git add about.html
+Stages the modified about.html file updated with new feature section content.
+
+git commit -m "Added feature updates"
+Commits the changes made on the 'feature' branch into version control history.
+
+git checkout main
+Switches the active working branch back to the 'main' branch.
+
+git merge feature
+Integrates the changes and commit history from the 'feature' branch into the 'main' branch.
+
+git log --oneline --graph --all
+Displays a graphical, one-line ASCII view of all commits across every branch in the repository history.
+
+git check-ignore -v sample.log temp\temp_data.tmp
+Verifies and debugs which specific .gitignore pattern rule is causing files to be ignored by Git.
+
+git add .gitignore
+Stages the newly created .gitignore configuration file for tracking in the repository.
+
+git commit -m "Add .gitignore configuration"
+Saves the .gitignore file into the repository commit history to ensure repository-wide consistency.
+
+git add README.md
+Stages the newly created README.md project documentation file.
+
+git commit -m "Update README"
+Creates a commit recording the addition of project documentation before demonstrating the undo operation.
+
+git reset --soft HEAD~1
+Undoes the most recent commit while keeping all modified files safely preserved in the staging area.
+
+git commit -m "Add project README"
+Re-commits the staged README.md file cleanly into the repository history.
+
+git remote add origin https://github.com/Varshitha1895/git-assignment.git
+Connects the local Git repository to the remote repository hosted on GitHub.
+
+git remote -v
+Lists all configured remote repository connections along with their fetch and push target URLs.
+
+git push -u origin main
+Pushes the local 'main' branch commits to the remote GitHub repository and establishes upstream tracking.
+
+git push origin feature
+Pushes the 'feature' branch commits to the remote GitHub repository so all branches are available remotely.
+
+git add git_commands.txt
+Stages the comprehensive Git command documentation reference file.
+
+git commit -m "Add git_commands.txt documentation"
+Commits the complete Git command log and reference guide into the repository.
+
+git push
+Pushes the latest local commits to the tracked upstream remote GitHub repository.
